@@ -1,0 +1,77 @@
+
+.animationreverse {
+    animation: slide 4s ease-in forwards;
+    
+}
+
+@keyframes slide {
+    0%{
+        
+        z-index: 1;
+        opacity: 1;
+ 
+       
+     }
+    20% {
+        transform: translate3d(100px,100px,0);
+        
+    }
+
+    60%{
+        box-shadow: -10px -10px 10px 1000px black;
+    }
+
+    
+    100%{
+
+        transform: translate3d(100px,100px,0);
+
+        height: 100%;
+        width: 100%;
+
+        box-shadow: 0 0 0 0 black;
+        
+        
+    }
+}
+
+.animation {
+    animation: slide 4s ease-in reverse;
+    
+}
+
+@keyframes slide {
+
+    0%{
+        transform: translate3d(00px,00px,0);
+
+        height: 100%;
+        width: 100%;
+
+        box-shadow: 0 0 0 0 black;
+       
+        
+    }
+    70%{
+        box-shadow: -10px -10px 10px 1000px black;
+    }
+
+    80% {
+        transform: translate3d(100px,100px,0);
+        
+    }
+
+    100%{
+        
+        z-index: 1;
+        opacity: 1;
+ 
+       
+     }
+    
+
+    
+
+    
+    
+}
